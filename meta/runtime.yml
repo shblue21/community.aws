@@ -28,7 +28,6 @@ action_groups:
     - aws_batch_job_queue
     - aws_codebuild
     - aws_codecommit
-    - aws_codedeploy
     - aws_codepipeline
     - aws_config_aggregation_authorization
     - aws_config_aggregator
@@ -265,8 +264,6 @@ plugin_routing:
     aws_codecommit:
       # Deprecation for this alias should not *start* prior to 2024-09-01
       redirect: community.aws.codecommit_repository
-    aws_codedeploy:
-      redirect: community.aws.codedeploy_appplication
     aws_codepipeline:
       # Deprecation for this alias should not *start* prior to 2024-09-01
       redirect: community.aws.codepipeline
